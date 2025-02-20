@@ -1,0 +1,12 @@
+backpack==0.1
+gdown==5.2.0
+imageio==2.31.6
+loguru==0.7.0
+matplotlib==3.7.4
+numpy==1.23.5
+parameterized==0.9.0
+Pillow==11.1.0
+timm==0.4.12
+torch==1.13.1+cu116
+tqdm==4.64.1
+wilds==2.0.0

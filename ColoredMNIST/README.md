@@ -24,7 +24,7 @@ This github enables the replication of our main experiments on Colored MNIST in 
 
 ### Main results
 
-To reproduce the results from our papers
+To reproduce the results from our paper:
 
 ```bash
 python train_coloredmnist.py \

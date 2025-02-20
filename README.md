@@ -13,7 +13,7 @@
   <img src="assets/image-1.png">
 </p>
 
-- We discover and theoretically define the over-invariance phenomenon, i.e., the loss of important details in invariance when alleviating the spurious features, which exists in almost all of the previous IL methods.
+- We discover and theoretically define the **over-invariance** phenomenon, i.e., the loss of important details in invariance when alleviating the spurious features, which exists in almost all of the previous IL methods.
 - We propose **Diverse Invariant Learning (DivIL)**, combining both invariant constraints and unsupervised contrastive learning with randomly masking mechanism to promote richer and more diverse invariance.
 - Experiments conducted on **12 benchmarks, 4 different invariant learning methods** across **3 modali-ties (graphs, vision, and natural language)** demonstrate that DivIL effectively enhances the out-of-distribution generalization performance, verifying the over-invariance insight.
 

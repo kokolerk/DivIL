@@ -22,7 +22,7 @@ $ pip install -r requirements.txt
 ## NLI with pretrained GPT-2 Model
 
 ### Main results
-To reproduce the results from our papers
+To reproduce the results from our paper:
 
 ```bash
 python main.py \

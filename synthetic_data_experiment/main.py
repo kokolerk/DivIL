@@ -26,7 +26,7 @@ plt.rcParams.update({'font.size': 11})
 dataset_builder = DatasetBuilder()
 
 
-def set_seed(seed=None):
+def set_seed(seed: int = 42):
     _seed = seed 
     np.random.seed(_seed)
     random.seed(_seed)
@@ -34,9 +34,8 @@ def set_seed(seed=None):
     torch.cuda.manual_seed_all(_seed)
 
 
-def test_over_invariance(framework_list=['ERM']):
+def test_over_invariance(framework_list: List[str] = ['ERM']):
     r"""Test over-invariance in IL methods."""
-    device = 'cpu'
     hparams = {
         'nonlinear_classifier': False,
         'weight_decay': 0.01,
@@ -72,7 +71,7 @@ def test_over_invariance(framework_list=['ERM']):
                 x, y, y_s = dataset_builder.create_train_dataset(inv_var_list, spu_var_list, seed)
                 x_test, y_test, y_s_test = dataset_builder.create_test_dataset(inv_var_list, spu_var_list, seed)
                 framework_class = get_algorithm_class(framework_name)
-                framework = framework_class(input_shape=x.shape[1:],
+                framework: Algorithm = framework_class(input_shape=x.shape[1:],
                                             num_classes=2,
                                             num_domains=2,
                                             hparams=hparams)
@@ -106,7 +105,7 @@ def test_over_invariance(framework_list=['ERM']):
         plt.show()
         
 
-def validate_ucl(framework_list=['ERM']):
+def validate_ucl(framework_list: List[str] = ['ERM']):
     r"""Test whether UCL can improve IL methods."""
     
     # device = 'cpu'
@@ -144,15 +143,17 @@ def validate_ucl(framework_list=['ERM']):
             
             framework_class = get_algorithm_class(framework_name)
             ucl_framework_class = get_algorithm_class(framework_name)
-            framework = framework_class(input_shape=x.shape[1:],
-                                        num_classes=2,
-                                        num_domains=2,
-                                        hparams=hparams)
+            framework: Algorithm = framework_class(
+                input_shape=x.shape[1:],
+                num_classes=2,
+                num_domains=2,
+                hparams=hparams)
             
-            ucl_framework = ucl_framework_class(input_shape=x.shape[1:],
-                        num_classes=2,
-                        num_domains=2,
-                        hparams=hparams)
+            ucl_framework: Algorithm = ucl_framework_class(
+                input_shape=x.shape[1:],
+                num_classes=2,
+                num_domains=2,
+                hparams=hparams)
 
             # start training
             for epoch in range(EPOCHS):
@@ -208,5 +209,5 @@ def validate_ucl(framework_list=['ERM']):
 
 
 if __name__ == '__main__':
+    test_over_invariance(framework_list=['IRM', 'VREx'])
     validate_ucl(framework_list=['IRM', 'VREx'])
-    # test_over_invariance(framework_list=['IRM', 'VREx'])

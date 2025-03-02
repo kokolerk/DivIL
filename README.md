@@ -2,7 +2,7 @@
 <p align="center">
     <a href="https://arxiv.org/abs/2502.12413"><img src="https://img.shields.io/badge/arXiv-2502.12413-b31b1b.svg" alt="Paper"></a>
     <a href="https://github.com/kokolerk/DivIL"><img src="https://img.shields.io/badge/-Github-grey?logo=github" alt="Github"></a>
-    <a href="https://github.com/kokolerk/DivIL"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=TMLR%2725&color=blue"> </a>
+    <a href="https://openreview.net/forum?id=2Zan4ATYsh"> <img alt="License" src="https://img.shields.io/static/v1?label=Pub&message=TMLR%2725&color=blue"> </a>
     <a href="https://github.com/kokolerk/DivIL/blob/main/LICENSE"> <img alt="License" src="https://img.shields.io/github/license/kokolerk/DivIL?color=blue"> </a>
 </p>
 

@@ -49,14 +49,14 @@ This repo benefits from [CIGA](https://github.com/LFhase/CIGA) and [DomainBed](h
 If you find our work helpful for your research, please consider giving a star ⭐ and citation 📝
 
 ```bibtex
-@misc{wang2025divil,
-    title={DivIL: Unveiling and Addressing Over-Invariance for Out-of- Distribution Generalization}, 
-    author={Jiaqi Wang and Yuhang Zhou and Zhixiong Zhang and Qiguang Chen and Yongqiang Chen and James Cheng},
+@article{wang2025divil,
+    title={Div{IL}: Unveiling and Addressing Over-Invariance for Out-of- Distribution Generalization},
+    author={Jiaqi WANG and Yuhang Zhou and Zhixiong Zhang and Qiguang Chen and Yongqiang Chen and James Cheng},
+    journal={Transactions on Machine Learning Research},
+    issn={2835-8856},
     year={2025},
-    eprint={2502.12413},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG},
-    url={https://arxiv.org/abs/2502.12413}, 
+    url={https://openreview.net/forum?id=2Zan4ATYsh},
+    note={}
 }
 ```
 
